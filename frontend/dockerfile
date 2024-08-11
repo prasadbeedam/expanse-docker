@@ -4,4 +4,3 @@ COPY code /usr/share/nginx/html/
 RUN rm -rf /etc/nginx/nginx.conf
 RUN rm -rf /tec/nginx/conf.d/defalt.conf
 COPY expense.conf /etc/nginx/nginx.conf
-USER nginx
