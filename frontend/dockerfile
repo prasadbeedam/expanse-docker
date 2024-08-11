@@ -1,6 +1,6 @@
 FROM nginx
 RUN rm -rf /usr/share/nginx/html/index.html
-COPY code /usr/share/nginx/html/
 RUN rm -rf /etc/nginx/nginx.conf
-RUN rm -rf /tec/nginx/conf.d/defalt.conf
-COPY expense.conf nginx.co/etc/nginx/nf
+RUN rm -rf /etc/nginx/conf.d/defalt.conf
+COPY code /usr/share/nginx/html/
+COPY expense.conf /etc/nginx/nginx.conf
